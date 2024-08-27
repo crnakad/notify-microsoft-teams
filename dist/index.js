@@ -1359,7 +1359,7 @@ const summary_generator = (obj, status_key) => {
 class MSTeams {
 	constructor() {
 		this.header = {
-			"@type": "MessageCard",
+			"type": "AdaptiveCard",
 			"@context": "http://schema.org/extensions"
 		}
 	}

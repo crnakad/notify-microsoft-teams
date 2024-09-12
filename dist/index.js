@@ -1448,7 +1448,7 @@ class MSTeams {
 		const response = await client.send(payload);
 		console.log(response.status)
 
-		if (!response.text) {
+		if (response.text) {
 			throw new Error(
 				"Failed to send notification to Microsoft Teams.\n" +
 				"Response:\n" +

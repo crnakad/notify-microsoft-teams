@@ -1446,6 +1446,7 @@ class MSTeams {
 	) {
 		const client = new IncomingWebhook(url);
 		const response = await client.send(payload);
+		console.log(response.status)
 
 		if (!response.text) {
 			throw new Error(

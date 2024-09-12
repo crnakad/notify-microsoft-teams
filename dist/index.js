@@ -3307,7 +3307,7 @@ TunnelingAgent.prototype.createSocket = function createSocket(options, cb) {
     connectReq.removeAllListeners();
     socket.removeAllListeners();
 
-    if (res.statusCode !== 200) {
+    if (res.statusCode !== 202) {
       debug('tunneling socket could not be established, statusCode=%d',
         res.statusCode);
       socket.destroy();
@@ -7905,7 +7905,7 @@ const pm = __webpack_require__(950);
 let tunnel;
 var HttpCodes;
 (function (HttpCodes) {
-    HttpCodes[HttpCodes["OK"] = 200] = "OK";
+    HttpCodes[HttpCodes["OK"] = 202] = "OK";
     HttpCodes[HttpCodes["MultipleChoices"] = 300] = "MultipleChoices";
     HttpCodes[HttpCodes["MovedPermanently"] = 301] = "MovedPermanently";
     HttpCodes[HttpCodes["ResourceMoved"] = 302] = "ResourceMoved";
